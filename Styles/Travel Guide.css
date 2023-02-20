@@ -1,0 +1,223 @@
+/* Import custom fonts */
+
+@font-face {
+    font-family: Typographica;
+    src: url(/Styles/fonts/TypoGraphica_demo.woff);
+}
+
+body a icon
+{
+    width: 128px;
+    height: 128px;
+}
+
+.navbar
+{
+    order: 5;
+    list-style-type: none;
+    position: relative;
+    overflow:hidden;
+    background-color: #28f;
+    /* To ensure in this case the whole navbar line has the background colour*/
+    padding: 0 20px;
+    width: auto;
+    height: auto;
+    transition: all 0.5s;
+}
+
+html
+{
+    margin: 10px;
+}
+
+/* For each list elements */
+
+li {
+    margin: 0px;
+    float: left; /* float, which means will there be a space-separation or no */
+}
+
+li a {
+    font-family: Typographica;
+    color: white;
+    font-size: 20px;
+    display: block;
+    border-left-color: white;
+    border-left-style: solid;
+    padding: 10px 20px;
+    text-decoration: none; /* Remove the underline or any other text deco */
+    position: relative;
+}
+
+.Donate /*Class inside of an element*/
+{
+    border-right-color: white;
+    border-right-style: solid;
+}
+
+li a:hover:not(.select) /* action when hover button for on than select class */
+{
+    position: relative;
+    background-color: blue;
+}
+
+li a:not(.select)
+{
+   background-color: #28f;
+   transition: all 0.5s;
+}
+
+.drop
+{
+    float:left;
+}
+
+.select
+{
+    background-color: #254091;
+    position: relative;
+    transition: all 0.5s;
+    margin: auto;
+    padding: auto;
+}
+
+/* */
+
+.background
+{
+    order: 2;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(Images/NNC.png);
+    background-size: cover;
+    background-position: cover;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 15px;
+    width: 100h;
+    height: 100%;
+    background-position-y: 50%;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-direction: forwards;
+}
+
+
+.text
+{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-direction: forwards;
+}
+
+.title
+{
+    text-align: center;
+    font-family: Typographica;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 0px 4px #254091;
+    position: relative;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+
+.subtext
+{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 25px;
+    transform: translateY(-40px);
+    color: #ffffff;
+    padding: 15px 0;
+    text-shadow: 0px 2px rgb(70, 70, 70,1);
+}
+
+.content
+{
+    font-size: 30px;
+    font-family: Roboto;
+    text-align: center;
+    color: #254091;
+}
+
+
+@keyframes move {
+    0% {opacity:0; transform:translateY(20px)}
+    100% {opacity: 100%; transform: translateY(0px);}
+    
+}
+
+@keyframes fade
+{
+    0% {opacity: 20%;}
+    100% {opacity: 100%;}
+}
+
+/* body contents */
+
+/*.join span
+{
+    display: grid;
+    background-color: #254091;
+    grid-template-columns: 1fr 1fr;
+    padding: auto;
+    gap: 20px;
+}*/
+
+.join .imagehere
+{
+    background: url(/Styles/Images/NNC.png);
+}
+
+/* footer */
+
+footer
+{
+    transform: translateY(8%);
+    background-color: rgba(0,0,0,0.65);
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    margin: -18px;
+    margin-top: 8px;
+    padding: 20px 0px;
+}
+
+footer .copyright
+{
+    margin: 50px;
+    text-align: left;
+}
+
+footer .copyrightmessage
+{
+    margin-bottom: -10px;
+}
+
+footer .footnote
+{
+    font-size: 15px;
+}
+
+.socmed
+{
+    transform: translateY(-60px);
+    float: right;
+    margin: -30px 20px;
+}
+
+.socmed a
+{
+    display: inline-block;
+    transition: all 0.25s;
+    text-decoration: none;
+}
+
+.socmed a:hover
+{
+    box-shadow: 0px 5px #000;
+    transform: translateY(-2px);
+}
